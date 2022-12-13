@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/*    font-family: 'Fraunces', serif;
+
+    font-family: 'Montserrat', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.grid {
+  background-color: white;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.img img {
+  max-width: 100%;
+  display: inherit;
+}
+
+.card-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pro-cat {
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.pro-name {
+  color: hsl(212, 21%, 14%);
+  font-size: 34px;
+  line-height: 1em;
+  font-family: 'Fraunces', 'serif';
+}
+
+.pro-des {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6em;
+  font-size: 15px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.new-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 29px;
+  font-family: 'Fraunces', 'serif';
+}
+
+.old-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  padding-left: 20px;
+}
+
+.cta:hover {
+  background-color: hsl(158, 79%, 22%);
+}
+
+.cta {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  padding: 12px 0;
+  border-style: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+.cta img {
+  padding-right: 7px;
+}
+
+@media only screen and (max-width: 595px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .img img {
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    display: block;
+  }
+
+  .pro-cat,
+  .pro-des,
+  .pro-name {
+    padding-bottom: 23px;
+  }
+}
+
+@media only screen and (max-width: 414px){
+  .container{
+    margin: 15px auto;
+    padding: 0 15px;
+    height: 100vh;
+  }
+
+  .img img{
+    max-height: 295px;
+  }
+
+  .card-content{
+    margin: 0px;
+  }
+
+  .pro-cat,
+  .pro-des,
+  .pro-name{
+    padding-bottom: 16px;
+  }
+
+  .pro-name{
+    font-size: 29px;
+  }
+
+  .pro-des{
+    font-size: 12px;
+  }
+
+  .new-price{
+    font-size: 25px;
+  }
+
+  .cta{
+    padding: 10px 0;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 375px){
+  .container{
+    margin: 15px auto;
+    padding: 0 15px;
+    height: 100vh;
+  }
+
+  .img img{
+    max-height: 255px;
+  }
+
+  .card-content{
+    margin: 0px;
+  }
+
+  .pro-cat,
+  .pro-des,
+  .pro-name{
+    padding-bottom: 16px;
+  }
+
+  .pro-name{
+    font-size: 29px;
+  }
+
+  .pro-des{
+    font-size: 12px;
+  }
+
+  .new-price{
+    font-size: 25px;
+  }
+
+  .cta{
+    padding: 10px 0;
+    width: 100%;
+  }
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
