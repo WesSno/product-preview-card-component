@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 
 /*    font-family: 'Fraunces', serif;
 
@@ -12,6 +12,10 @@
 }
 
 body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+#content {
   font-family: "Montserrat", "sans-serif";
   font-size: 14px;
   background-color: hsl(30, 38%, 92%);
@@ -59,7 +63,7 @@ body {
   color: hsl(212, 21%, 14%);
   font-size: 34px;
   line-height: 1em;
-  font-family: 'Fraunces', 'serif';
+  font-family: "Fraunces", "serif";
 }
 
 .pro-des {
@@ -78,12 +82,11 @@ body {
 .new-price {
   color: hsl(158, 36%, 37%);
   font-size: 29px;
-  font-family: 'Fraunces', 'serif';
+  font-family: "Fraunces", "serif";
 }
 
 .old-price {
   color: hsl(228, 12%, 48%);
-  text-decoration: line-through;
   padding-left: 20px;
 }
 
@@ -108,6 +111,18 @@ body {
   padding-right: 7px;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
 @media only screen and (max-width: 595px) {
   .grid {
     grid-template-columns: 1fr;
@@ -130,91 +145,97 @@ body {
   }
 }
 
-@media only screen and (max-width: 414px){
-  .container{
+@media only screen and (max-width: 414px) {
+  .container {
     margin: 15px auto;
     padding: 0 15px;
     height: 100vh;
   }
 
-  .img img{
+  .img img {
     max-height: 295px;
   }
 
-  .card-content{
+  .card-content {
     margin: 0px;
   }
 
   .pro-cat,
   .pro-des,
-  .pro-name{
+  .pro-name {
     padding-bottom: 16px;
   }
 
-  .pro-name{
+  .pro-name {
     font-size: 29px;
   }
 
-  .pro-des{
+  .pro-des {
     font-size: 12px;
   }
 
-  .new-price{
+  .new-price {
     font-size: 25px;
   }
 
-  .cta{
+  .cta {
     padding: 10px 0;
     width: 100%;
   }
-
 }
 
-@media only screen and (max-width: 375px){
-  .container{
+@media only screen and (max-width: 375px) {
+  .container {
     margin: 15px auto;
     padding: 0 15px;
     height: 100vh;
   }
 
-  .img img{
+  .img img {
     max-height: 255px;
   }
 
-  .card-content{
+  .card-content {
     margin: 0px;
   }
 
   .pro-cat,
   .pro-des,
-  .pro-name{
+  .pro-name {
     padding-bottom: 16px;
   }
 
-  .pro-name{
+  .pro-name {
     font-size: 29px;
   }
 
-  .pro-des{
+  .pro-des {
     font-size: 12px;
   }
 
-  .new-price{
+  .new-price {
     font-size: 25px;
   }
 
-  .cta{
+  .cta {
     padding: 10px 0;
     width: 100%;
   }
-
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+footer{
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  bottom: 50px;
 }
